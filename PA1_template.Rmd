@@ -2,7 +2,12 @@
 title: "repdata_assignment1.rmd"
 author: "Mogens Yde-Andersen"
 date: "June 11, 2015"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    theme: united
+  md_document:
+    toc: true
 ---
 
 ###Loading and preprocessing the data
@@ -15,11 +20,11 @@ unzip("activity.zip")
 rawdata <- read.csv("activity.csv", header=TRUE, sep = ",", dec = ".")
 ```
 
-2.Process/transform the data (if necessary) into a format suitable for your analysis
+###Process/transform the data (if necessary) into a format suitable for your analysis
 
 I did not process anything at this stage.
 
-###What is mean total number of steps taken per day?
+What is mean total number of steps taken per day?
 
 1.Calculate the total number of steps taken per day
 
